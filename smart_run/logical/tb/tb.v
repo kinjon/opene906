@@ -126,7 +126,7 @@ begin
     `RTL_IAHBL_MEM.ram3.mem[i][7:0] = ((^mem_inst_temp[i][ 7: 0]) === 1'bx ) ? 8'b0:mem_inst_temp[i][ 7: 0];
   end
 
- for(i=0;i<=65536;i=i+1)
+ for(i=0;i<=131072;i=i+1)
   begin
     `RTL_DAHBL_MEM.ram0.mem[i][7:0]  = 8'b0;
     `RTL_DAHBL_MEM.ram1.mem[i][7:0]  = 8'b0;
